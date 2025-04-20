@@ -13,6 +13,9 @@ struct ContentView: View {
             Tab("Home", systemImage: "house"){
                 HomeView()
             }
+            Tab("Scratchpad", systemImage: "note.text"){
+                Scratchpad()
+            }
             Tab("Checklists", systemImage: "checklist"){
                 Checklists()
             }

@@ -25,10 +25,10 @@ struct HomeView: View {
                 Spacer()
                 VStack {
                     Spacer()
-                    Button("Open Latest Simbrief Flightplan") {
+                    Button("Open Latest Simbrief Dispatch") {
                         openURL(URL(string: "https://dispatch.simbrief.com/briefing/latest")!)
                     }
-                    .frame(width: 300, height: 30)
+                    .frame(width: 250, height: 30)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(10)
@@ -36,7 +36,7 @@ struct HomeView: View {
                     Button("Open Chartfox") {
                         openURL(URL(string: "https://chartfox.org")!)
                     }
-                    .frame(width: 300, height: 30)
+                    .frame(width: 250, height: 30)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(10)
@@ -44,7 +44,7 @@ struct HomeView: View {
                     Button("Open FS2024 Charts") {
                         openURL(URL(string: "https://planner.flightsimulator.com")!)
                     }
-                    .frame(width: 300, height: 30)
+                    .frame(width: 250, height: 30)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(10)
@@ -58,38 +58,31 @@ struct HomeView: View {
                     HStack{
                         Text("Departure ICAO: ")
                         TextField("Departure ICAO", text: $departureAirport)
-                            .frame(width: 300)
+                            .frame(width: 250)
                             .textFieldStyle(.roundedBorder)
                     }
                     HStack {
                         Text("Arrival ICAO: ")
                         TextField("Arrival ICAO", text: $arrivalAirport)
-                            .frame(width: 300)
+                            .frame(width: 250)
                             .textFieldStyle(.roundedBorder)
                     }
                     HStack {
                         Text("Aircraft Registration: ")
                         TextField("Aircraft Registration", text: $aircraftReg)
-                            .frame(width: 300)
+                            .frame(width: 250)
                             .textFieldStyle(.roundedBorder)
                     }
                     HStack {
                         Text("Aircraft Type: ")
                         TextField("ICAO code", text: $aircraftType)
-                            .frame(width: 300)
+                            .frame(width: 250)
                             .textFieldStyle(.roundedBorder)
                     }
                     HStack {
                         Text("Flight Plan Route: ")
                         TextField("Flight Plan", text: $route, axis: .vertical)
-                            .frame(width: 300)
-                            .textFieldStyle(.roundedBorder)
-                            .lineLimit(6, reservesSpace: true)
-                    }
-                    HStack {
-                        Text("Notes: ")
-                        TextField("Notes", text: $route, axis: .vertical)
-                            .frame(width: 300)
+                            .frame(width: 250)
                             .textFieldStyle(.roundedBorder)
                             .lineLimit(6, reservesSpace: true)
                     }
