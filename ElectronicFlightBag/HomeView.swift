@@ -49,6 +49,14 @@ struct HomeView: View {
                     .background(.blue)
                     .cornerRadius(10)
                     Spacer()
+                    Button("Open Skyvector VFR Charts") {
+                        openURL(URL(string: "https://skyvector.com/")!)
+                    }
+                    .frame(width: 250, height: 30)
+                    .foregroundColor(.white)
+                    .background(.blue)
+                    .cornerRadius(10)
+                    Spacer()
                     Spacer()
                     Spacer()
                 }
