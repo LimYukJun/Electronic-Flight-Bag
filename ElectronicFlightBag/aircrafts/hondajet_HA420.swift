@@ -33,7 +33,6 @@ struct hondajet_HA420: View {
     @State private var item22 = false
     @State private var item23 = false
     @State private var item24 = false
-    @State private var item25 = false
     
     @State private var item26 = false
     @State private var item27 = false
@@ -142,6 +141,21 @@ struct hondajet_HA420: View {
     @State private var item123 = false
     @State private var item124 = false
     
+    @State private var item125 = false
+    @State private var item126 = false
+    @State private var item127 = false
+    @State private var item128 = false
+    @State private var item129 = false
+    @State private var item130 = false
+    @State private var item131 = false
+    @State private var item132 = false
+    @State private var item133 = false
+    @State private var item134 = false
+    @State private var item135 = false
+    @State private var item136 = false
+    @State private var item137 = false
+    @State private var item138 = false
+    
     var body: some View {
         NavigationStack{
             List{
@@ -170,7 +184,19 @@ struct hondajet_HA420: View {
                     Toggle("Chime - DARK (no light)", isOn: $item22)
                     Toggle("STBY Instrument - CHECK", isOn: $item23)
                     Toggle("Avionics Initialization - COMPLETED", isOn: $item24)
-                    Toggle("Garmin G3000 - Setup", isOn: $item24)
+                    Toggle("Home>Sim Options>Load Manager - Set Payload and Fuel", isOn: $item125)
+                    Toggle("Home>Utilities>Preflight - Complete Fire, Stick Shacker and Lights Test", isOn: $item126)
+                    Toggle("Home>Utilities>Weight and Fuel - Get from sim", isOn: $item127)
+                    Toggle("Home>Aircraft Systems>System Controls - Ext and Int Lights As Desired", isOn: $item128)
+                    Toggle("Home>Aircraft Systems>System Controls - Air Condition As Desired", isOn: $item129)
+                    Toggle("Home>Perf>VNAV - VSD AS REQ", isOn: $item130)
+                    Toggle("Avionics Settings - As Desired", isOn: $item131)
+                    Toggle("Home>Flight Plan - Enter and verify", isOn: $item132)
+                    Toggle("Home>Map Settings - As Desired", isOn: $item133)
+                    Toggle("Screens - As Desired (Half mode)", isOn: $item134)
+                    Toggle("Checklist - Complete", isOn: $item135)
+                    Toggle("Transponder - Set Squak", isOn: $item134)
+                    Toggle("AP Panel - Set", isOn: $item134)
 
                 }
                 Section(header: Text("Engine Start")) {
