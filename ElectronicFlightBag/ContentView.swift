@@ -13,6 +13,9 @@ struct ContentView: View {
             Tab("Home", systemImage: "house"){
                 HomeView()
             }
+            Tab("Airport Info", systemImage: "info.circle"){
+                AirportInfoView()
+            }
             Tab("Scratchpad", systemImage: "note.text"){
                 Scratchpad()
             }
